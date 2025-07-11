@@ -1,105 +1,573 @@
-.main-section {
-  background-image: url('../Assets/Hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  width:1440px;
-  height:698px;
-  margin: 0 auto;
-  color: #1d1d1d;
-  position: relative;
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
+body{
+    background-color:#F5F8FF;
+}
+.header .banner-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+
+}
+.ml-0{
+    margin-left: 0 !important;
+}
+/* Navbar Css */
 .navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 60px;
-    color: #4E47FF;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 150px;
 }
-.logo {
-  font-size: 34px;
-  font-weight: bold;
-  color: #4b4bf9;
-}
-.signup-btn {
-  background-color: #4b4bf9;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.content {
-    text-align: center;
-    margin: 200px;
-}
-.content h1 {
-  font-size: 65px;
-  margin-bottom: 20px;
+.navbar .logo p{
+    color: var(--Primary-Color, #4E47FF);
+    font-family: 'Inter';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 51px */
+    margin-right: 909px;
 }
 
-.main-btn {
-  background-color: #4b4bf9;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.section2{
-    background-color: antiquewhite;
-    width: 1140px;
-    height: 328px;
-    display: flex;
-    justify-content: space-between;
-    margin: 100px auto;
-}
-.content2{
-}
-.section2 h1{
-    font-size: 42px;
-}
-.section2 p{
-    font-size: 24px;
-}
-.section2 button{
-    width: 229px;
-    height: 48px;
-    background-color: #4E47FF;
-    color: white;
-    font-weight: bold;
+
+.navbar button{
+    border: 1px;
+    border-radius: 10px;
+    background: #4E47FF;
+    padding: 12px 36px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway';
     font-size: 16px;
-    border-radius: 12px;
-}
-.section2 img{
-      width: 403px;
-      height: 328;
-      border-radius: 30px;
-}
-.section3{
-    width: 1140px;
-    height: 306px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: aqua;
-    
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+    transition: 0.5s;
 
 }
-.section3{
-    width: 1140px;
-    height: 306px;
-    text-align: center;
-    background-color:#8b89c2;
-    margin: 0 auto;
-    padding-top:100px;
+.navbar button:hover{
+    background-color: rgb(38, 37, 53);
+    color: #ffffff;
+    transition: 0.5s;
 }
-.heading{
-    font-size: 38px;
-    font-weight: bold;
+
+
+/* Banner Css */
+
+.banner{
+    margin-bottom: 268px;
+}
+.banner .banner-header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.banner .banner-header p{
+    width: 811px;
     color: #252432;
-    margin-top:px;
-    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 37px;
 }
-.box{
+.banner .banner-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .banner-btn button{
+    border: 1px;
+    padding: 12px 36px;
+    border-radius: 10px;
+    background: #4E47FF;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+    transition: .5s;
+}
+.banner .banner-btn button:hover{
+    background-color: #252432;
+    transition: .5s;
+}
+
+/* About css Start */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 116px;
+}
+.about .about-text{
+    margin-right: 220px;
+}
+.about .about-text h4{
+    color: #252432;
+    font-family: 'Raleway';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+.about .about-text p{
+    width: 500px;
+    color: rgba(37, 36, 50, 0.50);
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin-bottom: 16px;
+}
+.about .about-text .about-btn button{
+    border: 1px;
+    padding: 12px 36px;
+    border-radius: 10px;
+    background: #4E47FF;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+    transition: .5s;
+}
+.about .about-text .about-btn button:hover{
+    background-color: #252432;
+}
+
+
+/* Counter Css */
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 137px;
+}
+.counter .counter-main{
+    width: 1140px;
+    border-radius: 24px;
+    background: rgba(78, 71, 255, 0.10);
+}
+.counter .counter-main .counter-text .counter-header{
+    color: #252432;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.counter .counter-main .counter-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.counter .counter-main .counter-box .card-1{
+    margin-right: 168px;
+}
+.counter .counter-main .counter-box .card-2{
+    margin-right: 168px;
+}
+.counter .counter-main .counter-box .card-1 h2{
+    color: var(--Primary-Color, #4E47FF);
+    font-family: 'Inter';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.counter .counter-main .counter-box .card-1 p{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.counter .counter-main .counter-box .card-2 h2{
+    color: var(--Primary-Color, #4E47FF);
+    font-family: 'Inter';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.counter .counter-main .counter-box .card-2 p{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.counter .counter-main .counter-box .card-3 h2{
+    color: var(--Primary-Color, #4E47FF);
+    font-family: 'Inter';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.counter .counter-main .counter-box .card-3 p{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* review Section Start */
+.review{
+    margin-bottom: 137px;
+}
+.review-title p{
+    color: #252432;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.review .review-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review .review-cards .card-main{
+    width: 377px;
+    border-radius: 14px;
+    border: var(--sds-size-stroke-border) solid #F2EDED;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
+
+.review .review-cards .card-main img{
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+.review .review-cards .card-main h4{
+    color: #1E1E1E;
+    /* Heading */
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight:600;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -0.48px;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+.review .review-cards .card-main .card-des{
+    color:#1E1E1E ;
+    font-family:'Inter';
+    font-size: 16px; 
+    font-style: normal;
+    font-weight:400;
+    line-height: 140%; /* 22.4px */
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+.review .review-cards .card-main .card-user{
+    display: flex;
+}
+.review .review-cards .card-main .card-user .user-img{
+    margin-right: 12px;
+}
+.review .review-cards .card-main .card-user .user-text{
+    margin-top: 24px;
+}
+.review .review-cards .card-main .card-user .user-text .name{
+    color: #757575 ;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight:600;
+    line-height: 140%; /* 22.4px */
+
+}
+.review .review-cards .card-main .card-user .user-text .date{
+    color:#B3B3B3 ;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight:400;
+    line-height: 140%; /* 22.4px */
+    
+}
+/* review Section End */
+
+/* CTR CSS  START*/
+.ctr{
+    width: 1140px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+.ctr .ctr-text h4{
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 60px */
+    padding-top: 72px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ctr .ctr-text p{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ctr .ctr-text .ctr-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ctr .ctr-text .ctr-btn button{
+    border: 1px;
+    padding: 12px 36px;
+    border-radius: 10px;
+    color: #FFF;
+    background: #4E47FF;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    transition: .5s;
+    cursor: pointer;
+}
+.ctr .ctr-text .ctr-btn button:hover{
+    background-color: #1E1E1E;
+    transition: .5s;
+}
+.ctr .ctr-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+/* CTR CSS  END*/
+
+/* Contact Section Start */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 85px;
+}
+.contact .contact-text{
+    margin-right: 71px;
+}
+.contact .contact-text p{
+    width: 528px;
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 97px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 116.4px */
+    
+}
+.contact .contact-form .mail{
+    margin-bottom: 20px;
+}
+.contact .contact-form .name{
+    margin-bottom: 20px;
+}
+.contact .contact-form .msg{
+    margin-bottom: 20px;
+}
+.contact .contact-form .mail h6{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    margin-bottom: 10px;
+}
+.contact .contact-form .mail input{
+    border-radius: 10px;
+    border: 1px solid #D6DDED;
+    background: #FFF;
+    width: 497px;
+    height: 70px;
+}
+.contact .contact-form .mail input::placeholder{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    padding-left: 32px;
+}
+.contact .contact-form .name h6{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    margin-bottom: 10px;
+}
+.contact .contact-form .name input{
+    border-radius: 10px;
+    border: 1px solid #D6DDED;
+    background: #FFF;
+    width: 497px;
+    height: 70px;
+}
+.contact .contact-form .name input::placeholder{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    padding-left: 32px;
+}
+.contact .contact-form .msg h6{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    margin-bottom: 10px;
+}
+.contact .contact-form .msg input{
+    border-radius: 10px;
+    border: 1px solid #D6DDED;
+    background: #FFF;
+    width: 497px;
+    height: 135px;
+    position: relative;
+}
+.contact .contact-form .msg input::placeholder{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+     /* 30px */
+    position: absolute;
+    top: 20px;
+    left:32px;
+    
+}
+.contact .contact-form .from-btn button{
+    border: 1px;
+    padding:19px 202px ;
+    border-radius: 10px;
+    background: var(--Primary-Color, #4E47FF);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+    transition: .5s;
+}
+.contact .contact-form .from-btn button:hover{
+    background-color: #1E1E1E;
+    transition: .5s;
+}
+
+/* Contact Section End */
+
+/* Footer Css Start */
+.footer{
+    background-color: #ffffff;
+    width: 100%;
+}
+.footer .footer-header{
+    color: var(--Primary-Color, #4E47FF);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-top: 104px;
+    margin-bottom: 8px;
+}
+.footer .footer-des{
+    width: 531px;
+    color: #8987A1;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 0 auto;
+}
+.footer .footer-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 103px;
+}
+
+.footer .footer-btn ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 48px;
+}
+.footer .footer-btn ul li a{
+    text-decoration: none;
+    color: #8987A1;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+/* Footer Css ENd */
