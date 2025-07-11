@@ -329,6 +329,9 @@ body{
     line-height: 140%; /* 22.4px */
     
 }
+.user-image{
+  border-radius: 15px;
+}
 /* review Section End */
 
 /* CTR CSS  START*/
